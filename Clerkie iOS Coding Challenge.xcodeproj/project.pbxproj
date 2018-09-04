@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CE44B1A8AF5A807F6F84556 /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */; };
+		5CD3A1112139CF7B00A3783B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1102139CF7B00A3783B /* AppDelegate.swift */; };
+		5CD3A1132139CF7B00A3783B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1122139CF7B00A3783B /* Login.swift */; };
+		5CD3A1162139CF7B00A3783B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3A1142139CF7B00A3783B /* Main.storyboard */; };
+		5CD3A1192139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1172139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld */; };
+		5CD3A11B2139CF7D00A3783B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3A11A2139CF7D00A3783B /* Assets.xcassets */; };
+		5CD3A11E2139CF7D00A3783B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3A11C2139CF7D00A3783B /* LaunchScreen.storyboard */; };
+		5CD3A1292139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1282139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeTests.swift */; };
+		5CD3A1342139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1332139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeUITests.swift */; };
+		5CD3A1452139D15100A3783B /* RoundedTextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1442139D15100A3783B /* RoundedTextBox.swift */; };
+		5CD3A1482139D24C00A3783B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1472139D24C00A3783B /* Constant.swift */; };
+		5CD3A14A2139D8B000A3783B /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1492139D8B000A3783B /* RoundedCornerButton.swift */; };
+		5CD3A14C2139DEAC00A3783B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A14B2139DEAC00A3783B /* CircleButton.swift */; };
+		5CD3A1502139E4BF00A3783B /* UserRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A14F2139E4BF00A3783B /* UserRegister.swift */; };
+		5CD3A1522139EAE200A3783B /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1512139EAE200A3783B /* Animation.swift */; };
+		5CD3A158213A349200A3783B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3A157213A349100A3783B /* GoogleService-Info.plist */; };
+		5CD3A15A213A3E6100A3783B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A159213A3E6100A3783B /* AuthProvider.swift */; };
+		5CD3A15C213A3F0D00A3783B /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A15B213A3F0D00A3783B /* DBProvider.swift */; };
+		5CD3A15E213A5D7900A3783B /* ChatHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A15D213A5D7900A3783B /* ChatHistory.swift */; };
+		5CD3A160213A5DC400A3783B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A15F213A5DC400A3783B /* Message.swift */; };
+		5CD3A162213A5EFF00A3783B /* ChatHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A161213A5EFF00A3783B /* ChatHistoryCell.swift */; };
+		5CD3A164213A5FE800A3783B /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A163213A5FE800A3783B /* Chat.swift */; };
+		5CD3A169213A622000A3783B /* ChatHistoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A168213A622000A3783B /* ChatHistoryDelegate.swift */; };
+		5CD3A16B213A687800A3783B /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A16A213A687800A3783B /* Searching.swift */; };
+		5CD3A16F213A87AD00A3783B /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A16E213A87AD00A3783B /* RoundedView.swift */; };
+		5CD3A171213B807300A3783B /* RegisterRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A170213B807300A3783B /* RegisterRoundedButton.swift */; };
+		5CD3A175213B963000A3783B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A174213B963000A3783B /* Profile.swift */; };
+		5CD3A177213B98C700A3783B /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A176213B98C700A3783B /* ProfileCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CD3A1252139CF7D00A3783B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CD3A1052139CF7B00A3783B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CD3A10C2139CF7B00A3783B;
+			remoteInfo = "Clerkie iOS Coding Challenge";
+		};
+		5CD3A1302139CF7D00A3783B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CD3A1052139CF7B00A3783B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CD3A10C2139CF7B00A3783B;
+			remoteInfo = "Clerkie iOS Coding Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		165009512DC054AE8A6078A9 /* Pods_Clerkie_iOS_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		560EB75D49E99C0612141635 /* Pods-Clerkie iOS Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie iOS Coding Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5CD3A10D2139CF7B00A3783B /* Clerkie iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD3A1102139CF7B00A3783B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CD3A1122139CF7B00A3783B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5CD3A1152139CF7B00A3783B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CD3A1182139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Clerkie_iOS_Coding_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		5CD3A11A2139CF7D00A3783B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CD3A11D2139CF7D00A3783B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CD3A11F2139CF7D00A3783B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD3A1242139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie iOS Coding ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD3A1282139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerkie_iOS_Coding_ChallengeTests.swift; sourceTree = "<group>"; };
+		5CD3A12A2139CF7D00A3783B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD3A12F2139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clerkie iOS Coding ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD3A1332139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clerkie_iOS_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
+		5CD3A1352139CF7D00A3783B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD3A1442139D15100A3783B /* RoundedTextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextBox.swift; sourceTree = "<group>"; };
+		5CD3A1472139D24C00A3783B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5CD3A1492139D8B000A3783B /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
+		5CD3A14B2139DEAC00A3783B /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		5CD3A14F2139E4BF00A3783B /* UserRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegister.swift; sourceTree = "<group>"; };
+		5CD3A1512139EAE200A3783B /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		5CD3A157213A349100A3783B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CD3A159213A3E6100A3783B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		5CD3A15B213A3F0D00A3783B /* DBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		5CD3A15D213A5D7900A3783B /* ChatHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistory.swift; sourceTree = "<group>"; };
+		5CD3A15F213A5DC400A3783B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5CD3A161213A5EFF00A3783B /* ChatHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryCell.swift; sourceTree = "<group>"; };
+		5CD3A163213A5FE800A3783B /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		5CD3A168213A622000A3783B /* ChatHistoryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryDelegate.swift; sourceTree = "<group>"; };
+		5CD3A16A213A687800A3783B /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
+		5CD3A16E213A87AD00A3783B /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		5CD3A170213B807300A3783B /* RegisterRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRoundedButton.swift; sourceTree = "<group>"; };
+		5CD3A174213B963000A3783B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		5CD3A176213B98C700A3783B /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		61D581B61B25905694823F9F /* Pods-Clerkie iOS Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie iOS Coding Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		8F3D57E5D36F3750504FF6F2 /* Pods_Clerkie_iOS_Coding_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CD3A10A2139CF7B00A3783B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE44B1A8AF5A807F6F84556 /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD3A1212139CF7D00A3783B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD3A12C2139CF7D00A3783B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3689609D33CA8A564688AEE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */,
+				165009512DC054AE8A6078A9 /* Pods_Clerkie_iOS_Coding_ChallengeTests.framework */,
+				8F3D57E5D36F3750504FF6F2 /* Pods_Clerkie_iOS_Coding_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CD3A1042139CF7B00A3783B = {
+			isa = PBXGroup;
+			children = (
+				5CD3A10F2139CF7B00A3783B /* Clerkie iOS Coding Challenge */,
+				5CD3A1272139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests */,
+				5CD3A1322139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests */,
+				5CD3A10E2139CF7B00A3783B /* Products */,
+				9E8FF9199AAEDD1733C611AC /* Pods */,
+				3689609D33CA8A564688AEE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CD3A10E2139CF7B00A3783B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A10D2139CF7B00A3783B /* Clerkie iOS Coding Challenge.app */,
+				5CD3A1242139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests.xctest */,
+				5CD3A12F2139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CD3A10F2139CF7B00A3783B /* Clerkie iOS Coding Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A165213A61F000A3783B /* Protocols */,
+				5CD3A157213A349100A3783B /* GoogleService-Info.plist */,
+				5CD3A1462139D22700A3783B /* Utility */,
+				5CD3A1432139D13600A3783B /* View */,
+				5CD3A1422139D12A00A3783B /* Controller */,
+				5CD3A1412139D12100A3783B /* Model */,
+				5CD3A1102139CF7B00A3783B /* AppDelegate.swift */,
+				5CD3A1142139CF7B00A3783B /* Main.storyboard */,
+				5CD3A11A2139CF7D00A3783B /* Assets.xcassets */,
+				5CD3A11C2139CF7D00A3783B /* LaunchScreen.storyboard */,
+				5CD3A11F2139CF7D00A3783B /* Info.plist */,
+				5CD3A1172139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld */,
+			);
+			path = "Clerkie iOS Coding Challenge";
+			sourceTree = "<group>";
+		};
+		5CD3A1272139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A1282139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeTests.swift */,
+				5CD3A12A2139CF7D00A3783B /* Info.plist */,
+			);
+			path = "Clerkie iOS Coding ChallengeTests";
+			sourceTree = "<group>";
+		};
+		5CD3A1322139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A1332139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeUITests.swift */,
+				5CD3A1352139CF7D00A3783B /* Info.plist */,
+			);
+			path = "Clerkie iOS Coding ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		5CD3A1412139D12100A3783B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A159213A3E6100A3783B /* AuthProvider.swift */,
+				5CD3A15B213A3F0D00A3783B /* DBProvider.swift */,
+				5CD3A15F213A5DC400A3783B /* Message.swift */,
+				5CD3A174213B963000A3783B /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CD3A1422139D12A00A3783B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A1122139CF7B00A3783B /* Login.swift */,
+				5CD3A14F2139E4BF00A3783B /* UserRegister.swift */,
+				5CD3A1512139EAE200A3783B /* Animation.swift */,
+				5CD3A15D213A5D7900A3783B /* ChatHistory.swift */,
+				5CD3A163213A5FE800A3783B /* Chat.swift */,
+				5CD3A16A213A687800A3783B /* Searching.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5CD3A1432139D13600A3783B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A1442139D15100A3783B /* RoundedTextBox.swift */,
+				5CD3A1492139D8B000A3783B /* RoundedCornerButton.swift */,
+				5CD3A14B2139DEAC00A3783B /* CircleButton.swift */,
+				5CD3A161213A5EFF00A3783B /* ChatHistoryCell.swift */,
+				5CD3A16E213A87AD00A3783B /* RoundedView.swift */,
+				5CD3A170213B807300A3783B /* RegisterRoundedButton.swift */,
+				5CD3A176213B98C700A3783B /* ProfileCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5CD3A1462139D22700A3783B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A1472139D24C00A3783B /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5CD3A165213A61F000A3783B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3A168213A622000A3783B /* ChatHistoryDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9E8FF9199AAEDD1733C611AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				560EB75D49E99C0612141635 /* Pods-Clerkie iOS Coding Challenge.debug.xcconfig */,
+				61D581B61B25905694823F9F /* Pods-Clerkie iOS Coding Challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CD3A10C2139CF7B00A3783B /* Clerkie iOS Coding Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD3A1382139CF7D00A3783B /* Build configuration list for PBXNativeTarget "Clerkie iOS Coding Challenge" */;
+			buildPhases = (
+				90E30CEEFDEF9FC522DE1CA9 /* [CP] Check Pods Manifest.lock */,
+				5CD3A1092139CF7B00A3783B /* Sources */,
+				5CD3A10A2139CF7B00A3783B /* Frameworks */,
+				5CD3A10B2139CF7B00A3783B /* Resources */,
+				40BAC6D593E35A9346DC6B8B /* [CP] Embed Pods Frameworks */,
+				E0EEA7D3C5D589BE88D0E877 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clerkie iOS Coding Challenge";
+			productName = "Clerkie iOS Coding Challenge";
+			productReference = 5CD3A10D2139CF7B00A3783B /* Clerkie iOS Coding Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CD3A1232139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD3A13B2139CF7D00A3783B /* Build configuration list for PBXNativeTarget "Clerkie iOS Coding ChallengeTests" */;
+			buildPhases = (
+				5CD3A1202139CF7D00A3783B /* Sources */,
+				5CD3A1212139CF7D00A3783B /* Frameworks */,
+				5CD3A1222139CF7D00A3783B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CD3A1262139CF7D00A3783B /* PBXTargetDependency */,
+			);
+			name = "Clerkie iOS Coding ChallengeTests";
+			productName = "Clerkie iOS Coding ChallengeTests";
+			productReference = 5CD3A1242139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CD3A12E2139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CD3A13E2139CF7D00A3783B /* Build configuration list for PBXNativeTarget "Clerkie iOS Coding ChallengeUITests" */;
+			buildPhases = (
+				5CD3A12B2139CF7D00A3783B /* Sources */,
+				5CD3A12C2139CF7D00A3783B /* Frameworks */,
+				5CD3A12D2139CF7D00A3783B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CD3A1312139CF7D00A3783B /* PBXTargetDependency */,
+			);
+			name = "Clerkie iOS Coding ChallengeUITests";
+			productName = "Clerkie iOS Coding ChallengeUITests";
+			productReference = 5CD3A12F2139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CD3A1052139CF7B00A3783B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Maryam Jafari";
+				TargetAttributes = {
+					5CD3A10C2139CF7B00A3783B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5CD3A1232139CF7D00A3783B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5CD3A10C2139CF7B00A3783B;
+					};
+					5CD3A12E2139CF7D00A3783B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5CD3A10C2139CF7B00A3783B;
+					};
+				};
+			};
+			buildConfigurationList = 5CD3A1082139CF7B00A3783B /* Build configuration list for PBXProject "Clerkie iOS Coding Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CD3A1042139CF7B00A3783B;
+			productRefGroup = 5CD3A10E2139CF7B00A3783B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CD3A10C2139CF7B00A3783B /* Clerkie iOS Coding Challenge */,
+				5CD3A1232139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests */,
+				5CD3A12E2139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CD3A10B2139CF7B00A3783B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD3A11E2139CF7D00A3783B /* LaunchScreen.storyboard in Resources */,
+				5CD3A11B2139CF7D00A3783B /* Assets.xcassets in Resources */,
+				5CD3A1162139CF7B00A3783B /* Main.storyboard in Resources */,
+				5CD3A158213A349200A3783B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD3A1222139CF7D00A3783B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD3A12D2139CF7D00A3783B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40BAC6D593E35A9346DC6B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SCRecorder/SCRecorder.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCRecorder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90E30CEEFDEF9FC522DE1CA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clerkie iOS Coding Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0EEA7D3C5D589BE88D0E877 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CD3A1092139CF7B00A3783B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD3A14C2139DEAC00A3783B /* CircleButton.swift in Sources */,
+				5CD3A175213B963000A3783B /* Profile.swift in Sources */,
+				5CD3A169213A622000A3783B /* ChatHistoryDelegate.swift in Sources */,
+				5CD3A16F213A87AD00A3783B /* RoundedView.swift in Sources */,
+				5CD3A1502139E4BF00A3783B /* UserRegister.swift in Sources */,
+				5CD3A15E213A5D7900A3783B /* ChatHistory.swift in Sources */,
+				5CD3A177213B98C700A3783B /* ProfileCell.swift in Sources */,
+				5CD3A15A213A3E6100A3783B /* AuthProvider.swift in Sources */,
+				5CD3A14A2139D8B000A3783B /* RoundedCornerButton.swift in Sources */,
+				5CD3A1132139CF7B00A3783B /* Login.swift in Sources */,
+				5CD3A1192139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld in Sources */,
+				5CD3A1482139D24C00A3783B /* Constant.swift in Sources */,
+				5CD3A162213A5EFF00A3783B /* ChatHistoryCell.swift in Sources */,
+				5CD3A15C213A3F0D00A3783B /* DBProvider.swift in Sources */,
+				5CD3A160213A5DC400A3783B /* Message.swift in Sources */,
+				5CD3A1452139D15100A3783B /* RoundedTextBox.swift in Sources */,
+				5CD3A1522139EAE200A3783B /* Animation.swift in Sources */,
+				5CD3A171213B807300A3783B /* RegisterRoundedButton.swift in Sources */,
+				5CD3A164213A5FE800A3783B /* Chat.swift in Sources */,
+				5CD3A1112139CF7B00A3783B /* AppDelegate.swift in Sources */,
+				5CD3A16B213A687800A3783B /* Searching.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD3A1202139CF7D00A3783B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD3A1292139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CD3A12B2139CF7D00A3783B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD3A1342139CF7D00A3783B /* Clerkie_iOS_Coding_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CD3A1262139CF7D00A3783B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CD3A10C2139CF7B00A3783B /* Clerkie iOS Coding Challenge */;
+			targetProxy = 5CD3A1252139CF7D00A3783B /* PBXContainerItemProxy */;
+		};
+		5CD3A1312139CF7D00A3783B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CD3A10C2139CF7B00A3783B /* Clerkie iOS Coding Challenge */;
+			targetProxy = 5CD3A1302139CF7D00A3783B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CD3A1142139CF7B00A3783B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CD3A1152139CF7B00A3783B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CD3A11C2139CF7D00A3783B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CD3A11D2139CF7D00A3783B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CD3A1362139CF7D00A3783B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CD3A1372139CF7D00A3783B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CD3A1392139CF7D00A3783B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 560EB75D49E99C0612141635 /* Pods-Clerkie iOS Coding Challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5CTWS5JD;
+				INFOPLIST_FILE = "Clerkie iOS Coding Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Clerkie-iOS-Coding-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CD3A13A2139CF7D00A3783B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D581B61B25905694823F9F /* Pods-Clerkie iOS Coding Challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5CTWS5JD;
+				INFOPLIST_FILE = "Clerkie iOS Coding Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Clerkie-iOS-Coding-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CD3A13C2139CF7D00A3783B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5CTWS5JD;
+				INFOPLIST_FILE = "Clerkie iOS Coding ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Clerkie-iOS-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clerkie iOS Coding Challenge.app/Clerkie iOS Coding Challenge";
+			};
+			name = Debug;
+		};
+		5CD3A13D2139CF7D00A3783B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5CTWS5JD;
+				INFOPLIST_FILE = "Clerkie iOS Coding ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Clerkie-iOS-Coding-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clerkie iOS Coding Challenge.app/Clerkie iOS Coding Challenge";
+			};
+			name = Release;
+		};
+		5CD3A13F2139CF7D00A3783B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5CTWS5JD;
+				INFOPLIST_FILE = "Clerkie iOS Coding ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Clerkie-iOS-Coding-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Clerkie iOS Coding Challenge";
+			};
+			name = Debug;
+		};
+		5CD3A1402139CF7D00A3783B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UF5CTWS5JD;
+				INFOPLIST_FILE = "Clerkie iOS Coding ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Maryam.Clerkie-iOS-Coding-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Clerkie iOS Coding Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CD3A1082139CF7B00A3783B /* Build configuration list for PBXProject "Clerkie iOS Coding Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD3A1362139CF7D00A3783B /* Debug */,
+				5CD3A1372139CF7D00A3783B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD3A1382139CF7D00A3783B /* Build configuration list for PBXNativeTarget "Clerkie iOS Coding Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD3A1392139CF7D00A3783B /* Debug */,
+				5CD3A13A2139CF7D00A3783B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD3A13B2139CF7D00A3783B /* Build configuration list for PBXNativeTarget "Clerkie iOS Coding ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD3A13C2139CF7D00A3783B /* Debug */,
+				5CD3A13D2139CF7D00A3783B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CD3A13E2139CF7D00A3783B /* Build configuration list for PBXNativeTarget "Clerkie iOS Coding ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD3A13F2139CF7D00A3783B /* Debug */,
+				5CD3A1402139CF7D00A3783B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CD3A1172139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CD3A1182139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodel */,
+			);
+			currentVersion = 5CD3A1182139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodel */;
+			path = Clerkie_iOS_Coding_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CD3A1052139CF7B00A3783B /* Project object */;
+}
