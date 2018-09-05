@@ -104,6 +104,8 @@ class Login: UIViewController , UIViewControllerTransitioningDelegate, GIDSignIn
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        userName.text = ""
+        pass.text = ""
         if let error = error {
             print(error.localizedDescription)
             return
@@ -120,14 +122,9 @@ class Login: UIViewController , UIViewControllerTransitioningDelegate, GIDSignIn
             }
             
             let user = Auth.auth().currentUser
-            if let user = user {
-                
-                let uid = user.uid
-                let email = user.email
-                
-                
-            }
-            let photoURL = Auth.auth().currentUser?.photoURL
+            print(user?.email)
+            print(user?.uid)
+            let photoURL = user?.photoURL
             DBProvider.Instance.saveUser(withID: user!.uid, email : (user?.email)!, image : String(describing: photoURL!) )
             self.performSegue(withIdentifier: "FromLoginToChatHistory", sender: "")
             

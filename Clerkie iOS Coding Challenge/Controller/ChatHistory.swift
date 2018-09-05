@@ -261,13 +261,27 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         receiverName =  newMessage[indexPath.row].receiverName
-        notificationToken = newMessage[indexPath.row].notificationToken
-        
-        self.notification = notificationToken
-        self.newPartnerId = self.newMessage[indexPath.row].recieverId
-        self.partnerImage = self.newMessage[indexPath.row].reciverImageURL
-        self.partnerName = self.newMessage[indexPath.row].receiverName
-        self.performSegue(withIdentifier: "FromChatHistorytoChat", sender: self.newPartnerId)
+
+        if (newMessage[indexPath.row].senderId == Auth.auth().currentUser?.uid){
+          
+                self.newPartnerId = self.newMessage[indexPath.row].recieverId
+                self.partnerImage = self.newMessage[indexPath.row].reciverImageURL
+                self.partnerName = self.newMessage[indexPath.row].receiverName
+                self.performSegue(withIdentifier: "FromChatHistorytoChat", sender: self.newPartnerId)
+                
+            
+            
+        }
+        else {
+    
+                self.newPartnerId = self.newMessage[indexPath.row].senderId
+                self.partnerImage = self.newMessage[indexPath.row].imageURl
+                self.partnerName = self.newMessage[indexPath.row].senderName
+                self.performSegue(withIdentifier: "FromChatHistorytoChat", sender: self.newPartnerId)
+                
+            
+            
+        }
   
     }
 
