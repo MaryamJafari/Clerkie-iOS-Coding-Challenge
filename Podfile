@@ -25,6 +25,9 @@ target 'Clerkie iOS Coding Challenge' do
     pod 'SCRecorder'
 
 
+pod 'Alamofire', '~> 4.0'
+pod 'SwiftDate', '~> 4.0'
+pod 'CorePlot', '~> 2.2'
 
     pod 'Firebase/Messaging'
 end

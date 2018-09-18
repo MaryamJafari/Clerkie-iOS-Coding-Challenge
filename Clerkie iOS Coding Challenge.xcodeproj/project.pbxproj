@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CE44B1A8AF5A807F6F84556 /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */; };
+		5C01DA8121517F75003A1921 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA8021517F75003A1921 /* Pie.swift */; };
+		5C01DA832151813E003A1921 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA822151813E003A1921 /* DataStore.swift */; };
+		5C01DA8521518157003A1921 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA8421518157003A1921 /* Rate.swift */; };
+		5C01DA8721518179003A1921 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA8621518179003A1921 /* Currency.swift */; };
+		5C01DA892151831F003A1921 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA882151831F003A1921 /* Bar.swift */; };
+		5C01DA8B215183E3003A1921 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA8A215183E3003A1921 /* TaskQueue.swift */; };
+		5C01DA8D215188FA003A1921 /* Currencies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C01DA8C215188FA003A1921 /* Currencies.plist */; };
+		5C01DA8F21518BBA003A1921 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C01DA8E21518BB9003A1921 /* Info.plist */; };
+		5C451A6A2151B24D00DDADA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451A692151B24D00DDADA9 /* Line.swift */; };
 		5C8251572150A8CF001486D4 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8251562150A8CF001486D4 /* Charts.swift */; };
 		5CD3A1112139CF7B00A3783B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1102139CF7B00A3783B /* AppDelegate.swift */; };
 		5CD3A1132139CF7B00A3783B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1122139CF7B00A3783B /* Login.swift */; };
@@ -38,6 +46,7 @@
 		5CD3A177213B98C700A3783B /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A176213B98C700A3783B /* ProfileCell.swift */; };
 		5CFF4FF821508C58000157FB /* CustomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF4FF721508C58000157FB /* CustomeView.swift */; };
 		5CFF4FFA2150A22D000157FB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF4FF92150A22D000157FB /* MenuCell.swift */; };
+		7E3DFD593CDB1A4C2195227E /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +66,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C451A862151BA2B00DDADA9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		165009512DC054AE8A6078A9 /* Pods_Clerkie_iOS_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		560EB75D49E99C0612141635 /* Pods-Clerkie iOS Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie iOS Coding Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5C01DA8021517F75003A1921 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		5C01DA822151813E003A1921 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		5C01DA8421518157003A1921 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		5C01DA8621518179003A1921 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		5C01DA882151831F003A1921 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		5C01DA8A215183E3003A1921 /* TaskQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskQueue.swift; sourceTree = "<group>"; };
+		5C01DA8C215188FA003A1921 /* Currencies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Currencies.plist; sourceTree = "<group>"; };
+		5C01DA8E21518BB9003A1921 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		5C451A692151B24D00DDADA9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		5C8251562150A8CF001486D4 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		5CD3A10D2139CF7B00A3783B /* Clerkie iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3A1102139CF7B00A3783B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE44B1A8AF5A807F6F84556 /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */,
+				7E3DFD593CDB1A4C2195227E /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +233,12 @@
 				5CD3A159213A3E6100A3783B /* AuthProvider.swift */,
 				5CD3A15B213A3F0D00A3783B /* DBProvider.swift */,
 				5CD3A15F213A5DC400A3783B /* Message.swift */,
+				5C01DA8E21518BB9003A1921 /* Info.plist */,
 				5CD3A174213B963000A3783B /* Profile.swift */,
+				5C01DA822151813E003A1921 /* DataStore.swift */,
+				5C01DA8421518157003A1921 /* Rate.swift */,
+				5C01DA8621518179003A1921 /* Currency.swift */,
+				5C01DA8A215183E3003A1921 /* TaskQueue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +253,9 @@
 				5CD3A163213A5FE800A3783B /* Chat.swift */,
 				5CD3A16A213A687800A3783B /* Searching.swift */,
 				5C8251562150A8CF001486D4 /* Charts.swift */,
+				5C01DA8021517F75003A1921 /* Pie.swift */,
+				5C01DA882151831F003A1921 /* Bar.swift */,
+				5C451A692151B24D00DDADA9 /* Line.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -248,6 +287,7 @@
 		5CD3A165213A61F000A3783B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				5C01DA8C215188FA003A1921 /* Currencies.plist */,
 				5CD3A168213A622000A3783B /* ChatHistoryDelegate.swift */,
 			);
 			path = Protocols;
@@ -275,6 +315,7 @@
 				5CD3A10B2139CF7B00A3783B /* Resources */,
 				40BAC6D593E35A9346DC6B8B /* [CP] Embed Pods Frameworks */,
 				E0EEA7D3C5D589BE88D0E877 /* [CP] Copy Pods Resources */,
+				5C451A862151BA2B00DDADA9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -369,7 +410,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C01DA8D215188FA003A1921 /* Currencies.plist in Resources */,
 				5CD3A11E2139CF7D00A3783B /* LaunchScreen.storyboard in Resources */,
+				5C01DA8F21518BBA003A1921 /* Info.plist in Resources */,
 				5CD3A11B2139CF7D00A3783B /* Assets.xcassets in Resources */,
 				5CD3A1162139CF7B00A3783B /* Main.storyboard in Resources */,
 				5CD3A158213A349200A3783B /* GoogleService-Info.plist in Resources */,
@@ -400,6 +443,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CorePlot/CorePlot.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -409,11 +454,14 @@
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SCRecorder/SCRecorder.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CorePlot.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -423,6 +471,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCRecorder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -474,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C01DA892151831F003A1921 /* Bar.swift in Sources */,
 				5CD3A14C2139DEAC00A3783B /* CircleButton.swift in Sources */,
 				5CD3A175213B963000A3783B /* Profile.swift in Sources */,
 				5CD3A169213A622000A3783B /* ChatHistoryDelegate.swift in Sources */,
@@ -486,16 +536,22 @@
 				5CD3A15A213A3E6100A3783B /* AuthProvider.swift in Sources */,
 				5CD3A14A2139D8B000A3783B /* RoundedCornerButton.swift in Sources */,
 				5CD3A1132139CF7B00A3783B /* Login.swift in Sources */,
+				5C01DA8721518179003A1921 /* Currency.swift in Sources */,
 				5C8251572150A8CF001486D4 /* Charts.swift in Sources */,
+				5C01DA832151813E003A1921 /* DataStore.swift in Sources */,
 				5CD3A1192139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld in Sources */,
 				5CD3A1482139D24C00A3783B /* Constant.swift in Sources */,
+				5C01DA8121517F75003A1921 /* Pie.swift in Sources */,
 				5CD3A162213A5EFF00A3783B /* ChatHistoryCell.swift in Sources */,
 				5CD3A15C213A3F0D00A3783B /* DBProvider.swift in Sources */,
+				5C451A6A2151B24D00DDADA9 /* Line.swift in Sources */,
 				5CD3A160213A5DC400A3783B /* Message.swift in Sources */,
+				5C01DA8B215183E3003A1921 /* TaskQueue.swift in Sources */,
 				5CD3A1452139D15100A3783B /* RoundedTextBox.swift in Sources */,
 				5CD3A1522139EAE200A3783B /* Animation.swift in Sources */,
 				5CD3A171213B807300A3783B /* RegisterRoundedButton.swift in Sources */,
 				5CD3A164213A5FE800A3783B /* Chat.swift in Sources */,
+				5C01DA8521518157003A1921 /* Rate.swift in Sources */,
 				5CD3A1112139CF7B00A3783B /* AppDelegate.swift in Sources */,
 				5CD3A16B213A687800A3783B /* Searching.swift in Sources */,
 			);

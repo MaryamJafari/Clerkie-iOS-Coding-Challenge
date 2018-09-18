@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (4.7.3)
+  - CorePlot (2.2)
   - Firebase (5.7.0):
     - Firebase/Core (= 5.7.0)
   - Firebase/Auth (5.7.0):
@@ -107,8 +109,11 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - SwiftDate (4.5.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - CorePlot (~> 2.2)
   - Firebase
   - Firebase/Auth
   - Firebase/Core
@@ -120,9 +125,12 @@ DEPENDENCIES:
   - JSQMessagesViewController
   - SCRecorder
   - SDWebImage
+  - SwiftDate (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CorePlot
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -145,6 +153,7 @@ SPEC REPOS:
     - Protobuf
     - SCRecorder
     - SDWebImage
+    - SwiftDate
 
 EXTERNAL SOURCES:
   GeoFire:
@@ -156,6 +165,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/firebase/geofire-objc.git
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CorePlot: cbe0c6e14220705e32e06a89c7d6a5a908b7d7d8
   Firebase: 734a4f92957aa6c40e7ae3fda3d9359e1890aa87
   FirebaseAnalytics: 993577e91157feb40945abedd6ab346d8a4b6ac8
   FirebaseAuth: 657a25e4be044d2d333663ebf515a861c5a59cd7
@@ -179,7 +190,8 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
 
-PODFILE CHECKSUM: 22e9405258899b0885b72be1aa188ad9242ced72
+PODFILE CHECKSUM: 59200fb8eefe3dec05b2e659267679f9b4c1dd43
 
 COCOAPODS: 1.5.3
