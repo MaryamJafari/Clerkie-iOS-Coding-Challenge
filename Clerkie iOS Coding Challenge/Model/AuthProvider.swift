@@ -54,7 +54,7 @@ class AuthProvider {
                 // Store User
                 let photoURL = Auth.auth().currentUser?.photoURL
 
-                DBProvider.Instance.saveUser(withID: self.userID(), email: withEmail, password: password, image:  "https://lh3.googleusercontent.com/-tUQB3Dsk-CA/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaPgyTfT06HN4e-r6WbWlnfFwYc1PQ/s96-c/photo.jpg"
+                DBProvider.Instance.saveUser(withID: self.userID(), email: withEmail, password: password, image:  "https://lh5.googleusercontent.com/-DHz-_T4XlsA/AAAAAAAAAAI/AAAAAAAAAAc/X2inkOoHIZg/s96-c/photo.jpg"
                 )
                 
                 // LogIn

@@ -48,6 +48,14 @@ class UserRegister: UIViewController, UITextFieldDelegate {
                     self.alertTheUser(title: "Problem With Creating User", message: message!)
                 }
                 else{
+                    
+                    let refreshAlert = UIAlertController(title: "You Register Successfully!", message: "", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                        self.navigationController?.popToRootViewController(animated: true)
+                    }))
+                    self.present(refreshAlert, animated: true, completion: nil)
+
                     print("Creating User Is completed")
                 }
             })

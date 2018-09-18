@@ -18,10 +18,14 @@ class ProfileCell: UITableViewCell {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         layer.cornerRadius = 5.0
+      
     }
-    
+    override func awakeFromNib() {
+        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
+        profileImage.clipsToBounds = true
+    }
     func configureCell(profile : Profile){
-        
+     
         let url = URL(string:profile.imageURl)
         let data = try? Data(contentsOf: url!)
         let image: UIImage = UIImage(data: data!)!

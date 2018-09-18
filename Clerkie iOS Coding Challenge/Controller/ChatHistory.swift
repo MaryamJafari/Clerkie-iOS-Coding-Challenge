@@ -35,15 +35,32 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
     var chatPartenrId : String?
     var notification : String?
     @IBOutlet weak var table: UITableView!
+    
+    @IBOutlet weak var addnewChat: UIBarButtonItem!
+    @IBOutlet weak var curveImage: UIImageView!
+    @IBOutlet weak var menuTableView: UITableView!
     var newPartnerId : String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuView.isHidden = true
         let color = UIColor(red: 0.0039, green: 0.451, blue: 0.6588, alpha: 1.0) /* #0173a8 */
         self.navigationController?.navigationBar.tintColor = UIColor.gray
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:color]
-        
+       profileImage.layer.cornerRadius = profileImage.frame.size.width/2
+        profileImage.clipsToBounds = true
+        table.tableFooterView = UIView()
+        closeMenu()
+        UIApplication.shared.keyWindow?.addSubview(menuView)
+        let data = try? Data(contentsOf: (Auth.auth().currentUser?.photoURL)!)
+        let image: UIImage = UIImage(data: data!)!
+        self.menuTableView.separatorStyle = .none
+        coverBtn.isHidden = true
+        profileImage.image = image
+        profileName.text = Auth.auth().currentUser?.email
         table.delegate = self
         table.dataSource = self
+        menuTableView.dataSource = self
+        menuTableView.delegate = self
         observeUserMessages()
         observeMediaUserMessages()
         searchController.searchResultsUpdater = self
@@ -53,8 +70,16 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
         searchController.searchBar.scopeButtonTitles = ["Name","Chat History"]
         searchController.searchBar.delegate = self
         table.allowsMultipleSelectionDuringEditing = true
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Avenir Next", size: 23)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:color]
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        self.navigationItem.title = "Chats"
     }
-    
+  
+     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
     func messageRecieved(contacts: [Message]) {
         self.newMessage = contacts
         
@@ -92,6 +117,8 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
             
         }
     }
+    
+    
     func observeUserMessages(){
         guard let uid = Auth.auth().currentUser?.uid else {
             return
@@ -223,13 +250,30 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if tableView == menuTableView{
+            return 2
+        }
+         else if tableView == table{
         if(searchController.isActive && searchController.searchBar.text != ""){
             return filterMessge.count
         }
         return newMessage.count
-        
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+        if tableView == menuTableView{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as? MenuCell
+            if indexPath.row == 0{
+                cell?.configureCell(image: "icons8-speech-bubble-40", cellneme: "Chat")
+            }
+            else{
+                cell?.configureCell( image: "icons8-ecg-40", cellneme: "Charts")
+            }
+            return cell!
+        }
+       else if tableView == table{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? ChatHistoryCell
         
         var msg : Message!
@@ -249,17 +293,21 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
             cell?.configureCell( message : (msg))
             
         }
-        
-        return cell!
+            return cell!
+        }
+        return UITableViewCell()
     }
     
     @IBAction func logOut(_ sender: Any) {
+        
         if AuthProvider.Instance.logOut(){
             navigationController?.popToRootViewController(animated: false)
         }
+        closeMenu()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if tableView == table{
         receiverName =  newMessage[indexPath.row].receiverName
 
         if (newMessage[indexPath.row].senderId == Auth.auth().currentUser?.uid){
@@ -281,6 +329,18 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
                 
             
             
+        }
+        }
+        else if tableView == menuTableView{
+            if indexPath.row == 0 {
+               closeMenu()
+
+            }
+            else{
+                 closeMenu() 
+                self.performSegue(withIdentifier: "Charts", sender: self.newPartnerId)
+               
+            }
         }
   
     }
@@ -338,6 +398,65 @@ class ChatHistory: UIViewController,  UITableViewDelegate, UITableViewDataSource
         
         table.reloadData()
     }
+    var isOpen = false
+    
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet var menuView: UIView!
+    @IBOutlet var profileImage: UIImageView!
+    @IBAction func showMenu(sender: AnyObject) {
+        if isOpen{
+            closeMenu()
+            isOpen = false
+            
+        }
+        else{
+            openMenu()
+            isOpen = true
+        }
+        
+    }
+    
+    @IBOutlet weak var coverBtn: UIButton!
+    @IBAction func coverButton(_ sender: Any) {
+        closeMenu()
+    }
+    func openMenu(){
+          addnewChat.isEnabled = false
+        UIView.animate(withDuration: 0.5) {
+            self.coverBtn.isHidden = false
+            self.menuView.isHidden = false
+            self.menuView.alpha = 1
+            self.table.alpha = 0.3
+            self.table.backgroundColor = UIColor.lightGray
+
+            self.table.isUserInteractionEnabled = false
+           // self.table.isHidden = true
+          
+            
+            UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+                self.curveImage.transform = CGAffineTransform(translationX: self.curveImage.frame.width, y: 0)
+            })
+        }
+    }
+  
+   
+    func closeMenu(){
+        addnewChat.isEnabled = true
+        UIView.animate(withDuration: 0.5) {
+            self.coverBtn.isHidden = true
+            self.menuView.isHidden = true
+        self.menuView.alpha = 0
+        self.table.alpha = 1
+            self.table.backgroundColor = UIColor.white
+            self.table.isUserInteractionEnabled = true
+        // self.table.isHidden = false
+        }
+        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+            self.curveImage.transform = .identity
+        })
+       
+    }
+    
 }
 
 extension ChatHistory : UISearchResultsUpdating{

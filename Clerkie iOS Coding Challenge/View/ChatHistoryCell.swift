@@ -26,6 +26,10 @@ class ChatHistoryCell: UITableViewCell {
         layer.cornerRadius = 5.0
         
     }
+    override func awakeFromNib() {
+        profileImage.layer.cornerRadius = profileImage.frame.size.width/2
+        profileImage.clipsToBounds = true
+    }
     
     func configureCell( message : Message){
         

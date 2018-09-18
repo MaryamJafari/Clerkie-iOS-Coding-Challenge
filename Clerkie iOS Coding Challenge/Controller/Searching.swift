@@ -32,7 +32,7 @@ class Searching: UIViewController,  UITableViewDelegate, UITableViewDataSource, 
         
         self.navigationController?.navigationBar.tintColor = UIColor.gray
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:color]
-        
+        self.navigationItem.title = "Contacts"
         table.delegate = self
         table.dataSource = self
         DBProvider.Instance.delegate = self
@@ -44,7 +44,14 @@ class Searching: UIViewController,  UITableViewDelegate, UITableViewDataSource, 
         searchController.searchBar.scopeButtonTitles = ["Name"]
         searchController.searchBar.delegate = self
         
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Avenir Next", size: 23)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:color]
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        
+        
     }
+  
     
     func dataRecieved(contacts : [Profile]){
         self.profiles = contacts

@@ -30,6 +30,8 @@ class Chat: JSQMessagesViewController, UIImagePickerControllerDelegate, UINaviga
     let picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        let color = UIColor(red: 0.0039, green: 0.451, blue: 0.6588, alpha: 1.0) /* #0173a8 */
+
         self.senderId = AuthProvider.Instance.userID()
         self.senderDisplayName = AuthProvider.Instance.username
         picker.delegate = self
@@ -38,7 +40,10 @@ class Chat: JSQMessagesViewController, UIImagePickerControllerDelegate, UINaviga
         navigationItem.title = ReciverName
         
         self.SenderName = Auth.auth().currentUser?.email
-        
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Avenir Next", size: 23)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:color]
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         
     }
     

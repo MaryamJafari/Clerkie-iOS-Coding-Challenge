@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CE44B1A8AF5A807F6F84556 /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */; };
+		5C8251572150A8CF001486D4 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8251562150A8CF001486D4 /* Charts.swift */; };
 		5CD3A1112139CF7B00A3783B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1102139CF7B00A3783B /* AppDelegate.swift */; };
 		5CD3A1132139CF7B00A3783B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1122139CF7B00A3783B /* Login.swift */; };
 		5CD3A1162139CF7B00A3783B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3A1142139CF7B00A3783B /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		5CD3A171213B807300A3783B /* RegisterRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A170213B807300A3783B /* RegisterRoundedButton.swift */; };
 		5CD3A175213B963000A3783B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A174213B963000A3783B /* Profile.swift */; };
 		5CD3A177213B98C700A3783B /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A176213B98C700A3783B /* ProfileCell.swift */; };
+		5CFF4FF821508C58000157FB /* CustomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF4FF721508C58000157FB /* CustomeView.swift */; };
+		5CFF4FFA2150A22D000157FB /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFF4FF92150A22D000157FB /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,7 @@
 		165009512DC054AE8A6078A9 /* Pods_Clerkie_iOS_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0B5DEF20265C039A91C14F /* Pods_Clerkie_iOS_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		560EB75D49E99C0612141635 /* Pods-Clerkie iOS Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie iOS Coding Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8251562150A8CF001486D4 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		5CD3A10D2139CF7B00A3783B /* Clerkie iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3A1102139CF7B00A3783B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD3A1122139CF7B00A3783B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		5CD3A170213B807300A3783B /* RegisterRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRoundedButton.swift; sourceTree = "<group>"; };
 		5CD3A174213B963000A3783B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5CD3A176213B98C700A3783B /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		5CFF4FF721508C58000157FB /* CustomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeView.swift; sourceTree = "<group>"; };
+		5CFF4FF92150A22D000157FB /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		61D581B61B25905694823F9F /* Pods-Clerkie iOS Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clerkie iOS Coding Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		8F3D57E5D36F3750504FF6F2 /* Pods_Clerkie_iOS_Coding_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clerkie_iOS_Coding_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,6 +216,7 @@
 				5CD3A15D213A5D7900A3783B /* ChatHistory.swift */,
 				5CD3A163213A5FE800A3783B /* Chat.swift */,
 				5CD3A16A213A687800A3783B /* Searching.swift */,
+				5C8251562150A8CF001486D4 /* Charts.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +231,8 @@
 				5CD3A16E213A87AD00A3783B /* RoundedView.swift */,
 				5CD3A170213B807300A3783B /* RegisterRoundedButton.swift */,
 				5CD3A176213B98C700A3783B /* ProfileCell.swift */,
+				5CFF4FF721508C58000157FB /* CustomeView.swift */,
+				5CFF4FF92150A22D000157FB /* MenuCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -472,9 +481,12 @@
 				5CD3A1502139E4BF00A3783B /* UserRegister.swift in Sources */,
 				5CD3A15E213A5D7900A3783B /* ChatHistory.swift in Sources */,
 				5CD3A177213B98C700A3783B /* ProfileCell.swift in Sources */,
+				5CFF4FFA2150A22D000157FB /* MenuCell.swift in Sources */,
+				5CFF4FF821508C58000157FB /* CustomeView.swift in Sources */,
 				5CD3A15A213A3E6100A3783B /* AuthProvider.swift in Sources */,
 				5CD3A14A2139D8B000A3783B /* RoundedCornerButton.swift in Sources */,
 				5CD3A1132139CF7B00A3783B /* Login.swift in Sources */,
+				5C8251572150A8CF001486D4 /* Charts.swift in Sources */,
 				5CD3A1192139CF7B00A3783B /* Clerkie_iOS_Coding_Challenge.xcdatamodeld in Sources */,
 				5CD3A1482139D24C00A3783B /* Constant.swift in Sources */,
 				5CD3A162213A5EFF00A3783B /* ChatHistoryCell.swift in Sources */,
