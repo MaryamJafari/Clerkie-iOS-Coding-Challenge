@@ -9,7 +9,7 @@
 import UIKit
 
 class Charts: UIViewController {
-
+    
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var contentView: UIView!
@@ -28,15 +28,29 @@ class Charts: UIViewController {
             activeViewController.didMove(toParentViewController: self)
         }
     }
-   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        segmentedControl.tintColor = Constant().color
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Avenir Next", size: 23)!]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:Constant().navigationColor]
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        self.navigationItem.title = "Analytics Dashboard"
+        /*segmentedControl.setTitle("Bar1", forSegmentAt: 0)
+         segmentedControl.setTitle("Pie1", forSegmentAt: 1)
+         segmentedControl.setTitle("Line", forSegmentAt: 2)
+         segmentedControl.setTitle("Bar2", forSegmentAt: 3)
+         segmentedControl.setTitle("Pie2", forSegmentAt: 4)*/
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         rates = [Rate(date: "2018-08-01", base: "kj", rates: ["1": 1.1, "2" : 2.2]) ,Rate(date: "2018-08-02", base: "kj", rates: ["1": 1.1, "2" : 2.2]) ,Rate(date: "2018-08-03", base: "kj", rates: ["1": 1.1, "2" : 2.2])]
-
+        
         symbols = Currency.currencies
         base = symbols.first
-      
+        
         loadRates()
     }
     
@@ -58,7 +72,7 @@ class Charts: UIViewController {
         })
     }
     
-   func showViewControllerForSegment(index: Int) {
+    func showViewControllerForSegment(index: Int) {
         
         let viewController = viewControllerForSegment(index: index)
         
@@ -72,23 +86,27 @@ class Charts: UIViewController {
             viewController.symbols = symbols
             viewController.rates = rates
         }
-        else if let viewController = viewController as? Bar {
-            viewController.base = base
-            viewController.symbols = symbols
-            viewController.rates = rates
-    }
-
-    
+        else if let viewController = viewController as? Line {
+            
+        }
+        else if let viewController = viewController as? LineChart {
+            
+        }
+        else if let viewController = viewController as? PieChart {
+            
+        }
+        
         activeViewController = viewController
     }
- 
+    
     
     func viewControllerForSegment(index: Int) -> UIViewController {
         switch index {
-        case 0:   return storyboard!.instantiateViewController(withIdentifier: "Pie")
-        case 1:   return storyboard!.instantiateViewController(withIdentifier: "Bar")
-        case 3:   return storyboard!.instantiateViewController(withIdentifier: "Line")
-
+        case 0:   return storyboard!.instantiateViewController(withIdentifier: "PieChart")
+        case 1:   return storyboard!.instantiateViewController(withIdentifier: "Line")
+        case 2:   return storyboard!.instantiateViewController(withIdentifier: "LineChart")
+        case 3:   return storyboard!.instantiateViewController(withIdentifier: "Bar")
+        //case 4:   return storyboard!.instantiateViewController(withIdentifier: "Pie")
         default:  return UIViewController()
         }
     }

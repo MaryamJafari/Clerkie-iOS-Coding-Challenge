@@ -16,6 +16,12 @@
 		5C01DA8D215188FA003A1921 /* Currencies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C01DA8C215188FA003A1921 /* Currencies.plist */; };
 		5C01DA8F21518BBA003A1921 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C01DA8E21518BB9003A1921 /* Info.plist */; };
 		5C451A6A2151B24D00DDADA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451A692151B24D00DDADA9 /* Line.swift */; };
+		5C451AAB2151BEFD00DDADA9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C451AAA2151BEFD00DDADA9 /* Charts.framework */; };
+		5C451AAC2151BEFD00DDADA9 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C451AAA2151BEFD00DDADA9 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C451ABD2151C1C300DDADA9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C451ABA2151C1B500DDADA9 /* Charts.framework */; };
+		5C451ABE2151C1C300DDADA9 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C451ABA2151C1B500DDADA9 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C451AC221520F2500DDADA9 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451AC121520F2500DDADA9 /* LineChart.swift */; };
+		5C451AC4215217EA00DDADA9 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451AC3215217EA00DDADA9 /* PieChart.swift */; };
 		5C8251572150A8CF001486D4 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8251562150A8CF001486D4 /* Charts.swift */; };
 		5CD3A1112139CF7B00A3783B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1102139CF7B00A3783B /* AppDelegate.swift */; };
 		5CD3A1132139CF7B00A3783B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3A1122139CF7B00A3783B /* Login.swift */; };
@@ -50,6 +56,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5C451AB92151C1B500DDADA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		5C451ABB2151C1B500DDADA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		5C451ABF2151C1C300DDADA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 		5CD3A1252139CF7D00A3783B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CD3A1052139CF7B00A3783B /* Project object */;
@@ -73,6 +100,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5C451AAC2151BEFD00DDADA9 /* Charts.framework in Embed Frameworks */,
+				5C451ABE2151C1C300DDADA9 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +121,10 @@
 		5C01DA8C215188FA003A1921 /* Currencies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Currencies.plist; sourceTree = "<group>"; };
 		5C01DA8E21518BB9003A1921 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		5C451A692151B24D00DDADA9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		5C451AAA2151BEFD00DDADA9 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Clerkie iOS Coding Challenge/Charts-master /Charts.xcodeproj"; sourceTree = "<group>"; };
+		5C451AC121520F2500DDADA9 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		5C451AC3215217EA00DDADA9 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
 		5C8251562150A8CF001486D4 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
 		5CD3A10D2139CF7B00A3783B /* Clerkie iOS Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clerkie iOS Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD3A1102139CF7B00A3783B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,7 +170,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C451ABD2151C1C300DDADA9 /* Charts.framework in Frameworks */,
 				7E3DFD593CDB1A4C2195227E /* Pods_Clerkie_iOS_Coding_Challenge.framework in Frameworks */,
+				5C451AAB2151BEFD00DDADA9 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,9 +203,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C451AB52151C1B400DDADA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C451ABA2151C1B500DDADA9 /* Charts.framework */,
+				5C451ABC2151C1B500DDADA9 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5CD3A1042139CF7B00A3783B = {
 			isa = PBXGroup;
 			children = (
+				5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */,
+				5C451AAA2151BEFD00DDADA9 /* Charts.framework */,
 				5CD3A10F2139CF7B00A3783B /* Clerkie iOS Coding Challenge */,
 				5CD3A1272139CF7D00A3783B /* Clerkie iOS Coding ChallengeTests */,
 				5CD3A1322139CF7D00A3783B /* Clerkie iOS Coding ChallengeUITests */,
@@ -256,6 +302,8 @@
 				5C01DA8021517F75003A1921 /* Pie.swift */,
 				5C01DA882151831F003A1921 /* Bar.swift */,
 				5C451A692151B24D00DDADA9 /* Line.swift */,
+				5C451AC121520F2500DDADA9 /* LineChart.swift */,
+				5C451AC3215217EA00DDADA9 /* PieChart.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +368,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5C451AC02151C1C300DDADA9 /* PBXTargetDependency */,
 			);
 			name = "Clerkie iOS Coding Challenge";
 			productName = "Clerkie iOS Coding Challenge";
@@ -396,6 +445,12 @@
 			mainGroup = 5CD3A1042139CF7B00A3783B;
 			productRefGroup = 5CD3A10E2139CF7B00A3783B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5C451AB52151C1B400DDADA9 /* Products */;
+					ProjectRef = 5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5CD3A10C2139CF7B00A3783B /* Clerkie iOS Coding Challenge */,
@@ -404,6 +459,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5C451ABA2151C1B500DDADA9 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 5C451AB92151C1B500DDADA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C451ABC2151C1B500DDADA9 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 5C451ABB2151C1B500DDADA9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5CD3A10B2139CF7B00A3783B /* Resources */ = {
@@ -444,6 +516,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Clerkie iOS Coding Challenge/Pods-Clerkie iOS Coding Challenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/ChartsRealm/ChartsRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/CorePlot/CorePlot.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
@@ -451,7 +525,10 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/PCLBlurEffectAlert/PCLBlurEffectAlert.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCRecorder/SCRecorder.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
@@ -461,6 +538,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartsRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CorePlot.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
@@ -468,7 +547,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PCLBlurEffectAlert.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCRecorder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
@@ -527,6 +609,7 @@
 				5CD3A14C2139DEAC00A3783B /* CircleButton.swift in Sources */,
 				5CD3A175213B963000A3783B /* Profile.swift in Sources */,
 				5CD3A169213A622000A3783B /* ChatHistoryDelegate.swift in Sources */,
+				5C451AC221520F2500DDADA9 /* LineChart.swift in Sources */,
 				5CD3A16F213A87AD00A3783B /* RoundedView.swift in Sources */,
 				5CD3A1502139E4BF00A3783B /* UserRegister.swift in Sources */,
 				5CD3A15E213A5D7900A3783B /* ChatHistory.swift in Sources */,
@@ -549,6 +632,7 @@
 				5C01DA8B215183E3003A1921 /* TaskQueue.swift in Sources */,
 				5CD3A1452139D15100A3783B /* RoundedTextBox.swift in Sources */,
 				5CD3A1522139EAE200A3783B /* Animation.swift in Sources */,
+				5C451AC4215217EA00DDADA9 /* PieChart.swift in Sources */,
 				5CD3A171213B807300A3783B /* RegisterRoundedButton.swift in Sources */,
 				5CD3A164213A5FE800A3783B /* Chat.swift in Sources */,
 				5C01DA8521518157003A1921 /* Rate.swift in Sources */,
@@ -576,6 +660,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5C451AC02151C1C300DDADA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 5C451ABF2151C1C300DDADA9 /* PBXContainerItemProxy */;
+		};
 		5CD3A1262139CF7D00A3783B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5CD3A10C2139CF7B00A3783B /* Clerkie iOS Coding Challenge */;
@@ -726,6 +815,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 560EB75D49E99C0612141635 /* Pods-Clerkie iOS Coding Challenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UF5CTWS5JD;
@@ -745,6 +835,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61D581B61B25905694823F9F /* Pods-Clerkie iOS Coding Challenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UF5CTWS5JD;

@@ -9,7 +9,7 @@
 import UIKit
 
 class MenuCell: UITableViewCell {
-    let color = UIColor(red: 0.2, green: 0.3843, blue: 0.5961, alpha: 1.0) /* #336298 */
+    let color = Constant().color
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var name: UILabel!

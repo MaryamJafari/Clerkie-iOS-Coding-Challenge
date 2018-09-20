@@ -15,7 +15,7 @@ class RoundedTextBox: UITextField {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 2.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        let color = UIColor(red:0.00, green:0.50, blue:0.93, alpha:1.8)
+        let color = Constant().color
         layer.borderColor = color.cgColor
         layer.borderWidth = 1.0
         layer.cornerRadius = 25

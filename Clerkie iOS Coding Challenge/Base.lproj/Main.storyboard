@@ -415,7 +415,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZi-Q3-yea">
                                                                     <rect key="frame" x="53" y="14" width="151" height="20"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -523,6 +523,7 @@
                         <outlet property="profileImage" destination="vio-ZM-2A9" id="vZ8-Sn-SbR"/>
                         <outlet property="profileName" destination="Slz-5j-A3n" id="LfD-4C-hjg"/>
                         <outlet property="table" destination="3eR-0Y-jIk" id="A11-PY-ljj"/>
+                        <outlet property="topMenu" destination="w3t-ZN-bZc" id="91k-rH-iYo"/>
                         <segue destination="x1a-7c-Llk" kind="show" identifier="FromChatHistorytoChat" id="2AW-hc-0R1"/>
                         <segue destination="rOU-wx-aTR" kind="show" identifier="Charts" id="cRU-ov-P43"/>
                     </connections>
@@ -540,38 +541,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ON4-lx-nWy">
-                                <rect key="frame" x="16" y="113" width="343" height="29"/>
+                                <rect key="frame" x="16" y="113" width="343" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="9A7-oc-X6l"/>
-                                    <constraint firstAttribute="width" constant="343" id="cQ5-GM-esr"/>
+                                    <constraint firstAttribute="height" constant="60" id="ayu-dq-3cL"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Pie"/>
-                                    <segment title="Bar"/>
-                                    <segment title=""/>
+                                    <segment title="" image="icons8-pie-chart-64"/>
+                                    <segment title="" image="icons8-bar-chart-64"/>
+                                    <segment title="" image="icons8-line-chart-64"/>
+                                    <segment title="" image="icons8-bar-chart-80"/>
                                 </segments>
+                                <color key="tintColor" red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="segmentChanged:" destination="rOU-wx-aTR" eventType="valueChanged" id="Paj-ka-p25"/>
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avg-4G-O94" customClass="CustomeView" customModule="Clerkie_iOS_Coding_Challenge" customModuleProvider="target">
-                                <rect key="frame" x="16" y="170" width="343" height="546"/>
+                                <rect key="frame" x="16" y="190" width="343" height="526"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="4R7-gQ-B0x"/>
-                                    <constraint firstAttribute="height" constant="546" id="CKY-V1-NiF"/>
+                                    <constraint firstAttribute="width" constant="343" id="Fm6-Or-jS8"/>
+                                    <constraint firstAttribute="height" constant="526" id="pR4-gc-rwv"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ON4-lx-nWy" firstAttribute="leading" secondItem="qHk-Dv-dvm" secondAttribute="leading" constant="16" id="3X2-N4-dRg"/>
-                            <constraint firstItem="avg-4G-O94" firstAttribute="leading" secondItem="qHk-Dv-dvm" secondAttribute="leading" constant="16" id="3q3-gM-XR8"/>
-                            <constraint firstItem="qHk-Dv-dvm" firstAttribute="trailing" secondItem="ON4-lx-nWy" secondAttribute="trailing" constant="16" id="Cfa-Zj-2b3"/>
-                            <constraint firstItem="qHk-Dv-dvm" firstAttribute="trailing" secondItem="avg-4G-O94" secondAttribute="trailing" constant="16" id="S7Y-5k-fo0"/>
-                            <constraint firstItem="qHk-Dv-dvm" firstAttribute="bottom" secondItem="avg-4G-O94" secondAttribute="bottom" constant="13" id="T5S-EX-cGe"/>
-                            <constraint firstItem="ON4-lx-nWy" firstAttribute="top" secondItem="qHk-Dv-dvm" secondAttribute="top" constant="25" id="fmr-Tc-h8d"/>
-                            <constraint firstItem="avg-4G-O94" firstAttribute="top" secondItem="ON4-lx-nWy" secondAttribute="bottom" constant="29" id="j9Z-nA-jg7"/>
+                            <constraint firstItem="ON4-lx-nWy" firstAttribute="top" secondItem="qHk-Dv-dvm" secondAttribute="top" constant="25" id="3id-fP-209"/>
+                            <constraint firstItem="ON4-lx-nWy" firstAttribute="leading" secondItem="qHk-Dv-dvm" secondAttribute="leading" constant="16" id="DGf-js-bka"/>
+                            <constraint firstItem="avg-4G-O94" firstAttribute="top" secondItem="ON4-lx-nWy" secondAttribute="bottom" constant="17" id="J2u-i6-7oe"/>
+                            <constraint firstItem="qHk-Dv-dvm" firstAttribute="trailing" secondItem="avg-4G-O94" secondAttribute="trailing" constant="16" id="eLA-Oc-P2E"/>
+                            <constraint firstItem="qHk-Dv-dvm" firstAttribute="bottom" secondItem="avg-4G-O94" secondAttribute="bottom" constant="13" id="oHN-Wk-P3i"/>
+                            <constraint firstItem="avg-4G-O94" firstAttribute="leading" secondItem="qHk-Dv-dvm" secondAttribute="leading" constant="16" id="uiB-ys-aQb"/>
+                            <constraint firstItem="qHk-Dv-dvm" firstAttribute="trailing" secondItem="ON4-lx-nWy" secondAttribute="trailing" constant="16" id="x9a-Qg-wYV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qHk-Dv-dvm"/>
                     </view>
@@ -634,6 +636,40 @@
             </objects>
             <point key="canvasLocation" x="6338.3999999999996" y="-43.596059113300491"/>
         </scene>
+        <!--Pie Chart-->
+        <scene sceneID="8LV-Kc-Ua6">
+            <objects>
+                <viewController storyboardIdentifier="PieChart" id="MpN-PH-68B" customClass="PieChart" customModule="Clerkie_iOS_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bnv-ET-Ui7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDK-Dt-7cN" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="26" y="104" width="319" height="629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="629" id="7g1-P5-rof"/>
+                                    <constraint firstAttribute="width" constant="319" id="Z1C-zo-tS3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hRS-QC-Mfk" firstAttribute="bottom" secondItem="UDK-Dt-7cN" secondAttribute="bottom" constant="45" id="OQB-69-iYn"/>
+                            <constraint firstItem="UDK-Dt-7cN" firstAttribute="top" secondItem="hRS-QC-Mfk" secondAttribute="top" constant="60" id="Wbw-kD-Wxz"/>
+                            <constraint firstItem="hRS-QC-Mfk" firstAttribute="trailing" secondItem="UDK-Dt-7cN" secondAttribute="trailing" constant="30" id="fLR-3X-nsz"/>
+                            <constraint firstItem="UDK-Dt-7cN" firstAttribute="leading" secondItem="hRS-QC-Mfk" secondAttribute="leading" constant="26" id="oUd-ZF-9qH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hRS-QC-Mfk"/>
+                    </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="UDK-Dt-7cN" id="U5v-z7-nnE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9T-gy-pLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7998" y="-99"/>
+        </scene>
         <!--Bar-->
         <scene sceneID="jlY-2e-ZXG">
             <objects>
@@ -649,10 +685,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJB-lB-qOd">
                                 <rect key="frame" x="14" y="52" width="346" height="45"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="EUR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wix-v5-Z6x">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Food" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="wix-v5-Z6x">
                                         <rect key="frame" x="14" y="8" width="42" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMu-hD-7zh">
@@ -663,10 +699,10 @@
                                             <action selector="switch1Changed:" destination="p0d-SV-Yep" eventType="valueChanged" id="sNq-AP-xQk"/>
                                         </connections>
                                     </switch>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="GBP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7BA-6p-fL0">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bills" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="7BA-6p-fL0">
                                         <rect key="frame" x="115" y="8" width="42" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hii-JC-GNa">
@@ -677,14 +713,14 @@
                                             <action selector="switch2Changed:" destination="p0d-SV-Yep" eventType="valueChanged" id="blV-px-q6M"/>
                                         </connections>
                                     </switch>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="PLN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-Z3-Fbx">
-                                        <rect key="frame" x="216" y="8" width="42" height="30"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Budget" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-Z3-Fbx">
+                                        <rect key="frame" x="216" y="8" width="56" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-R2-aL3">
-                                        <rect key="frame" x="258" y="8" width="51" height="31"/>
+                                        <rect key="frame" x="272" y="8" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="onTintColor" red="0.16862745100000001" green="0.25098039220000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -725,17 +761,69 @@
         <!--Line-->
         <scene sceneID="Wxk-Vh-sig">
             <objects>
-                <viewController id="ba6-f5-Sb6" customClass="Line" customModule="Clerkie_iOS_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Line" id="ba6-f5-Sb6" customClass="Line" customModule="Clerkie_iOS_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2WH-bE-wQa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nR4-Tj-7OC" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="82" width="343" height="687"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="687" id="Eew-uR-ZGY"/>
+                                    <constraint firstAttribute="width" constant="343" id="sLk-V1-gMH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nR4-Tj-7OC" firstAttribute="leading" secondItem="QMP-xe-DZe" secondAttribute="leading" constant="16" id="JGv-s2-C2S"/>
+                            <constraint firstItem="QMP-xe-DZe" firstAttribute="trailing" secondItem="nR4-Tj-7OC" secondAttribute="trailing" constant="16" id="cmU-4g-3HV"/>
+                            <constraint firstItem="nR4-Tj-7OC" firstAttribute="top" secondItem="QMP-xe-DZe" secondAttribute="top" constant="38" id="rP9-Zt-iwT"/>
+                            <constraint firstItem="QMP-xe-DZe" firstAttribute="bottom" secondItem="nR4-Tj-7OC" secondAttribute="bottom" constant="9" id="udB-8A-CRh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QMP-xe-DZe"/>
                     </view>
+                    <connections>
+                        <outlet property="barChartView" destination="nR4-Tj-7OC" id="V7H-ZY-TS5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rHQ-Xc-m2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7998" y="734"/>
+            <point key="canvasLocation" x="7997.6000000000004" y="733.74384236453204"/>
+        </scene>
+        <!--Line Chart-->
+        <scene sceneID="oig-pN-yUu">
+            <objects>
+                <viewController storyboardIdentifier="LineChart" id="CVu-Bf-3KC" customClass="LineChart" customModule="Clerkie_iOS_Coding_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="khw-PC-e2J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvS-cE-uWF" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="27" y="82" width="320" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="8YQ-0b-LFp"/>
+                                    <constraint firstAttribute="height" constant="538" id="wLG-iZ-uQf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IvS-cE-uWF" firstAttribute="leading" secondItem="dGX-mm-YQ3" secondAttribute="leading" constant="27" id="I5d-wZ-OMf"/>
+                            <constraint firstItem="dGX-mm-YQ3" firstAttribute="trailing" secondItem="IvS-cE-uWF" secondAttribute="trailing" constant="28" id="bON-Tt-1zk"/>
+                            <constraint firstItem="IvS-cE-uWF" firstAttribute="top" secondItem="dGX-mm-YQ3" secondAttribute="top" constant="38" id="h1j-qw-MDS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dGX-mm-YQ3"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="IvS-cE-uWF" id="X9c-hH-5Ao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgU-5P-z1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8808.7999999999993" y="866.74876847290648"/>
         </scene>
         <!--Searching-->
         <scene sceneID="hoa-zP-v4z">
@@ -871,7 +959,11 @@
     <resources>
         <image name="Blue" width="1676" height="958"/>
         <image name="Screen Shot 2018-08-31 at 12.34.45 PM" width="194" height="206"/>
+        <image name="icons8-bar-chart-64" width="64" height="64"/>
+        <image name="icons8-bar-chart-80" width="80" height="80"/>
         <image name="icons8-cancel-64" width="64" height="64"/>
+        <image name="icons8-line-chart-64" width="64" height="64"/>
+        <image name="icons8-pie-chart-64" width="64" height="64"/>
         <image name="icons8-plus-64" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>

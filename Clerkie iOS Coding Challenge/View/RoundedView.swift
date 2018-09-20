@@ -14,7 +14,7 @@ class CircleView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let color = UIColor(red:0.00, green:0.50, blue:0.93, alpha:1.8)
+        let color = Constant().color
         layer.shadowColor = color.cgColor
         layer.shadowOpacity = 0.4
         layer.shadowRadius = 2.0

@@ -7,29 +7,51 @@
 //
 
 import UIKit
-
+import Charts
 class Line: UIViewController {
-
+    var months: [String]!
+    @IBOutlet weak var barChartView: BarChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let unitsSold = [200.0, 40.0, 60.0, 30.0, 120.0, 160.0]
+        
+        setChart(y: unitsSold)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setChart(y: [Double]) {
+        var dataEntries = [BarChartDataEntry]()
+        
+        for (i, val) in y.enumerated() {
+            let dataEntry = BarChartDataEntry(x: Double(i), y: val) 
+            dataEntries.append(dataEntry)
+        }
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Commute Expence")
+        barChartView.data = BarChartData(dataSet: chartDataSet)
+        
+        let xaxis = XAxis()
+        xaxis.valueFormatter = BarChartFormatter()
+        barChartView.xAxis.valueFormatter = xaxis.valueFormatter
+        barChartView.xAxis.labelPosition = .bottom
+        chartDataSet.colors = [UIColor(red:0.00, green:0.50, blue:0.93, alpha:1.8)]
+        barChartView.backgroundColor = UIColor.white
+        barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
+        let ll = ChartLimitLine(limit: 150.0, label: "Assigned Budget")
+        barChartView.rightAxis.addLimitLine(ll)
+        
+        barChartView.chartDescription?.text = ""
     }
-    */
-
+    
+    
+ 
+}
+public class BarChartFormatter: NSObject, IAxisValueFormatter{
+    
+    var months: [String]! = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+    
+    
+    public func stringForValue(_ value: Double, axis: AxisBase?) -> String {
+        // 0 -> Jan, 1 -> Feb...
+        return months[Int(value)]
+    }
 }

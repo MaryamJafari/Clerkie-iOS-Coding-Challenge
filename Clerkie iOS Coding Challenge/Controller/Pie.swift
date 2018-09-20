@@ -9,7 +9,7 @@
 import UIKit
 import CorePlot
 class Pie: UIViewController {
-
+    
     
     var base: Currency!
     var rate: Rate!
@@ -132,8 +132,8 @@ extension Pie: CPTPieChartDataSource, CPTPieChartDelegate {
         let symbol = symbols[Int(idx)]
         //rate = Rate(date: "2018-08-01", base: "kj", rates: ["1": 1.1, "2" : 2.2])
         let currencyRate = rate.rates[symbol.name]!.floatValue
-
-       
+        
+        
         return 1.0 / currencyRate
     }
     

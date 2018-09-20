@@ -10,8 +10,12 @@ import Foundation
 import  UIKit
 class Constant {
     let SHADOW_GRAY : CGFloat = 157.0/225.0
-    
-    //messages
+    let color = UIColor(red:0.00, green:0.50, blue:0.93, alpha:1.8)
+        //UIColor(red:0.00, green:0.67, blue:0.93, alpha:1.0)
+        //UIColor(red:0.00, green:0.50, blue:0.93, alpha:1.8)
+    //let color2 =  UIColor(red: 0.0039, green: 0.451, blue: 0.6588, alpha: 1.0) /* #0173a8 */
+let navigationColor = UIColor(red:0.00, green:0.52, blue:0.71, alpha:1.0)
+     //messages
     static let TEXT = "text"
     static let PHOTO_URL = "photo_url"
     static let SENDER_ID = "sender_Id"

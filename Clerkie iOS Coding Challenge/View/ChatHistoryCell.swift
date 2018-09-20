@@ -12,7 +12,7 @@ import FirebaseDatabase
 import FirebaseStorage
 class ChatHistoryCell: UITableViewCell {
     var myImage: UIImage?
-    let color = UIColor(red: 0.2, green: 0.3843, blue: 0.5961, alpha: 1.0) /* #336298 */
+    let color = Constant().color
     let gold = UIColor(red: 0.6431, green: 0.5373, blue: 0.1647, alpha: 1.0) /* #a4892a */
     var chatPartnerImage : String?
     var partnerName : String?

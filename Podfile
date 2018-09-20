@@ -20,10 +20,12 @@ target 'Clerkie iOS Coding Challenge' do
     pod 'JSQMessagesViewController'
     pod 'GoogleSignIn'
     pod 'SDWebImage'
-    
+   pod 'PCLBlurEffectAlert'
+
     pod 'GeoFire', :git => 'https://github.com/firebase/geofire-objc.git'
     pod 'SCRecorder'
-
+pod 'Charts'
+pod 'ChartsRealm'
 
 pod 'Alamofire', '~> 4.0'
 pod 'SwiftDate', '~> 4.0'
