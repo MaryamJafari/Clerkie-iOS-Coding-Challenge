@@ -14,6 +14,7 @@
 		5C01DA892151831F003A1921 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA882151831F003A1921 /* Bar.swift */; };
 		5C01DA8B215183E3003A1921 /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01DA8A215183E3003A1921 /* TaskQueue.swift */; };
 		5C2316C5215471CE007BF468 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CD3A157213A349100A3783B /* GoogleService-Info.plist */; };
+		5C2316CA2154AAFE007BF468 /* Currencies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C2316C92154AAFE007BF468 /* Currencies.plist */; };
 		5C451A6A2151B24D00DDADA9 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451A692151B24D00DDADA9 /* Line.swift */; };
 		5C451AC221520F2500DDADA9 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451AC121520F2500DDADA9 /* LineChart.swift */; };
 		5C451AC4215217EA00DDADA9 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C451AC3215217EA00DDADA9 /* PieChart.swift */; };
@@ -112,6 +113,7 @@
 		5C01DA8A215183E3003A1921 /* TaskQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskQueue.swift; sourceTree = "<group>"; };
 		5C01DA8C215188FA003A1921 /* Currencies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Currencies.plist; sourceTree = "<group>"; };
 		5C01DA8E21518BB9003A1921 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		5C2316C92154AAFE007BF468 /* Currencies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Currencies.plist; path = "Clerkie iOS Coding Challenge/View/Currencies.plist"; sourceTree = SOURCE_ROOT; };
 		5C451A692151B24D00DDADA9 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		5C451AAA2151BEFD00DDADA9 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C451AB42151C1B400DDADA9 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Clerkie iOS Coding Challenge/Charts-master /Charts.xcodeproj"; sourceTree = "<group>"; };
@@ -193,6 +195,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C2316C72154AAEA007BF468 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				5C2316C92154AAFE007BF468 /* Currencies.plist */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
 		5C451AB52151C1B400DDADA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 		5CD3A10F2139CF7B00A3783B /* Clerkie iOS Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				5C2316C72154AAEA007BF468 /* Currency */,
 				5CD3A165213A61F000A3783B /* Protocols */,
 				5CD3A157213A349100A3783B /* GoogleService-Info.plist */,
 				5CD3A1462139D22700A3783B /* Utility */,
@@ -472,6 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2316CA2154AAFE007BF468 /* Currencies.plist in Resources */,
 				5C2316C5215471CE007BF468 /* GoogleService-Info.plist in Resources */,
 				5CD3A11E2139CF7D00A3783B /* LaunchScreen.storyboard in Resources */,
 				5CD3A11B2139CF7D00A3783B /* Assets.xcassets in Resources */,
